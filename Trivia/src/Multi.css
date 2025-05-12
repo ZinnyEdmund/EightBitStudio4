@@ -26,8 +26,13 @@ body {
 
 .settings {
   position: absolute;
-  top: 20px;
-  left: 40px;
+  top: 40px;
+  left: 60px;
+}
+
+.settings img{
+  width: 60px;
+  height: 60px;
 }
 
 /* Timer styles */
@@ -178,8 +183,8 @@ body {
     background: linear-gradient(to right, #6a7f4c, #8b7847, #f96236, #fa7246, #fa7752);
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
-    border-bottom-left-radius: 60px;
-    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
     display: inline-block;
     text-align: center;
     justify-content: center;
@@ -273,7 +278,7 @@ body {
   font-weight: 510;
 }
 
-/* State styles */
+/* State styles..... I really don't think it is necesssary rn.
 .option.selected {
   background-color: rgba(255, 255, 255, 0.3);
   border-color: white;
@@ -287,7 +292,7 @@ body {
 .option.incorrect {
   background-color: rgba(244, 67, 54, 0.3);
   border-color: #F44336;
-}
+} */
 
 /* Mobile responsiveness */
 @media screen and (max-width: 768px) {
@@ -297,8 +302,8 @@ body {
   }
   
   .Avatar1 img, .Avatar2 img {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
   }
   
   .question-container h2 {
@@ -312,7 +317,9 @@ body {
   
   .indicator {
     font-size: 1rem;
-    padding: 20px 15px;
+    padding: 20px 12px;
+    position: absolute;
+    top: 25%;
   }
 }
 
@@ -323,11 +330,12 @@ body {
   
   .Avatar1 img, .Avatar2 img {
     width: 50px;
-    height: 50px;
+    height: 60px;
   }
   
   .Avatar-container {
     margin-bottom: 20px;
+    gap: 40px;
   }
   
   .question-container {
